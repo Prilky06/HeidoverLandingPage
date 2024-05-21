@@ -65,26 +65,30 @@ nav {
     margin-bottom: 2em;
 }
 
-.key-benefits, .how-it-works, .case-studies, .interactive-elements {
+.vision, .services, .case-studies, .interactive-elements {
     padding: 3em 1em;
     text-align: center;
 }
 
-.key-benefits h2, .how-it-works h2, .case-studies h2, .interactive-elements h2 {
+.vision h2, .services h2, .case-studies h2, .interactive-elements h2 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
 }
 
-.benefit, .process-step, .case-study, .demo {
+.services .key-benefits h3, .vision p, .case-studies .case-study, .interactive-elements .demo {
     margin-bottom: 2em;
 }
 
-.benefit img, .process-step img {
+.services .benefit, .services .process-step, .case-studies .case-study, .interactive-elements .demo {
+    margin-bottom: 2em;
+}
+
+.services .benefit img, .services .process-step img {
     width: 100px;
     height: 100px;
 }
 
-.benefit h3, .process-step h3 {
+.services .benefit h4, .services .process-step h3 {
     margin-top: 0.5em;
     font-size: 1.2em;
 }
@@ -167,3 +171,4 @@ footer button {
     .hero-content p {
         font-size: 1em;
     }
+}
