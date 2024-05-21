@@ -173,9 +173,10 @@ footer button {
     }
 
 
+/* Add this section below existing CSS rules */
 .our-story {
     padding: 3em 1em;
-    text-align: center;
+    text-align: justify;
 }
 
 .contact-us {
