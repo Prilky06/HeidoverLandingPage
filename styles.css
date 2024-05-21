@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    background: #f8f9fa;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 20px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 2em 1em;
+    background: #007BFF;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.video-container {
+    margin-bottom: 2em;
+}
+
+.key-benefits, .how-it-works, .case-studies, .interactive-elements {
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.key-benefits h2, .how-it-works h2, .case-studies h2, .interactive-elements h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.benefit, .process-step, .case-study, .demo {
+    margin-bottom: 2em;
+}
+
+.benefit img, .process-step img {
+    width: 100px;
+    height: 100px;
+}
+
+.benefit h3, .process-step h3 {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+}
+
+.contact-info, .social-media, .newsletter {
+    margin-bottom: 1em;
+}
+
+.contact-info p, .newsletter p {
+    margin: 0.5em 0;
+}
+
+.social-media a {
+    margin: 0 0.5em;
+}
+
+footer {
+    background: #f4f4f4;
+    padding: 2em 1em;
+    text-align: center;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
+
+footer form {
+    display: flex;
+    justify-content: center;
+}
+
+footer input[type="email"] {
+    padding: 0.5em;
+    margin-right: 0.5em;
+}
+
+footer button {
+    padding: 0.5em;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
