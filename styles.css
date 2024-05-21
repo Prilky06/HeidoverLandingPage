@@ -171,4 +171,16 @@ footer button {
     .hero-content p {
         font-size: 1em;
     }
+
+
+.our-story {
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.contact-us {
+    margin-top: 3em;
+    padding-top: 3em;
+    border-top: 1px solid #ccc;
+}
 }
