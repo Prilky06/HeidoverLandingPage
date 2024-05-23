@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -12,11 +12,17 @@ body {
     background: #f8f9fa;
     justify-content: space-between;
     flex-wrap: wrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
     height: 50px;
     margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
 }
 
 nav {
@@ -42,55 +48,98 @@ nav {
     text-decoration: none;
     color: #333;
     font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #007BFF;
 }
 
 .hero-content {
     text-align: center;
     padding: 2em 1em;
-    background: #007BFF;
+    background: linear-gradient(135deg, #007BFF 0%, #00D4FF 100%);
     color: white;
 }
 
 .hero-content h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
+    animation: fadeInDown 1s ease-out;
 }
 
 .hero-content p {
     font-size: 1.5em;
     margin-bottom: 1em;
+    animation: fadeInUp 1s ease-out;
 }
 
 .video-container {
     margin-bottom: 2em;
+    animation: fadeIn 2s ease-out;
 }
 
-.vision, .services, .case-studies, .interactive-elements {
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.vision, .services, .our-story, .contact-us {
     padding: 3em 1em;
     text-align: center;
 }
 
-.vision h2, .services h2, .case-studies h2, .interactive-elements h2 {
+.vision h2, .services h2, .our-story h2, .contact-us h2 {
     font-size: 2.5em;
     margin-bottom: 0.5em;
+    animation: fadeInDown 1s ease-out;
 }
 
-.services .key-benefits h3, .vision p, .case-studies .case-study, .interactive-elements .demo {
+.services .key-benefits h3, .vision p, .our-story p {
     margin-bottom: 2em;
+    animation: fadeInUp 1s ease-out;
 }
 
-.services .benefit, .services .process-step, .case-studies .case-study, .interactive-elements .demo {
+.services .benefit {
     margin-bottom: 2em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.services .benefit img, .services .process-step img {
-    width: 100px;
-    height: 100px;
+.services .benefit:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.services .benefit h4, .services .process-step h3 {
-    margin-top: 0.5em;
-    font-size: 1.2em;
+.our-story p {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .contact-info, .social-media, .newsletter {
@@ -103,6 +152,11 @@ nav {
 
 .social-media a {
     margin: 0 0.5em;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
 }
 
 footer {
@@ -131,6 +185,11 @@ footer button {
     color: white;
     border: none;
     cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+footer button:hover {
+    background: #0056b3;
 }
 
 /* Responsive styles */
@@ -154,34 +213,4 @@ footer button {
     }
 
     .hero-content p {
-        font-size: 1.2em;
-    }
-
-    .video-container iframe {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero-content h1 {
-        font-size: 2em;
-    }
-
-    .hero-content p {
-        font-size: 1em;
-    }
-
-
-/* Add this section below existing CSS rules */
-.our-story {
-    padding: 3em 1em;
-    text-align: justify;
-}
-
-.contact-us {
-    margin-top: 3em;
-    padding-top: 3em;
-    border-top: 1px solid #ccc;
-}
-}
+        font-size:
