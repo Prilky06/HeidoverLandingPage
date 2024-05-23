@@ -16,6 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 9999; /* Ensure it is above other elements */
+    transition: opacity 0.5s ease; /* Smooth transition for fade out */
 }
 
 .loading-logo {
@@ -39,6 +40,8 @@ body {
 /* Hide the main content initially */
 #content {
     display: none;
+    opacity: 0; /* Start with invisible content */
+    transition: opacity 0.5s ease; /* Smooth transition for fade in */
 }
 
 .nav-container {
@@ -100,4 +103,147 @@ nav {
 
 .hero-content h1 {
     font-size: 3em;
-    margin-bottom:
+    margin-bottom: 0.5em;
+    animation: fadeInDown 1s ease-out;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    animation: fadeInUp 1s ease-out;
+}
+
+.video-container {
+    margin-bottom: 2em;
+    animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.vision, .services, .our-story, .contact-us {
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.vision h2, .services h2, .our-story h2, .contact-us h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    animation: fadeInDown 1s ease-out;
+}
+
+.services .key-benefits h3, .vision p, .our-story p {
+    margin-bottom: 2em;
+    animation: fadeInUp 1s ease-out;
+}
+
+.services .benefit {
+    margin-bottom: 2em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services .benefit:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.our-story p {
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.contact-info, .social-media, .newsletter {
+    margin-bottom: 1em;
+}
+
+.contact-info p, .newsletter p {
+    margin: 0.5em 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .vision h2, .services h2, .our-story h2, .contact-us h2 {
+        font-size: 2em;
+    }
+
+    .video-container iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .vision h2, .services h2, .our-story h2, .contact-us h2 {
+        font-size: 1.5em;
+    }
+
+    .vision, .services, .our-story, .contact-us {
+        padding: 2em 1em;
+    }
+
+    .logo {
+        height: 40px;
+    }
+}
