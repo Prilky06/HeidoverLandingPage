@@ -193,6 +193,27 @@ nav {
     margin: 0 10px;
 }
 
+/* Center and justify styles */
+.center-justify {
+    text-align: center;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.center-justify p,
+.center-justify form {
+    text-align: justify;
+    max-width: 800px;
+    width: 100%;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+}
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     .nav-container {
@@ -246,4 +267,4 @@ nav {
     .logo {
         height: 40px;
     }
-}
+    }
